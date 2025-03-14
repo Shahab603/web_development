@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables_Exercise</title>
+</head>
+
+<body>
+    <p id="cart-quantity">Cart Quantity</p>
+    <button onclick="
+    document.getElementById('cart-quantity').innerText = cartQuantity;
+    ">
+        Show Quantity
+
+    </button>
+    <button onclick="
+    document.getElementById('cart-quantity').innerText = cartQuantity = cartQuantity + 1;
+    
+    ">
+        Add to Cart
+
+    </button>
+    <button onclick="
+    document.getElementById('cart-quantity').innerText = cartQuantity= cartQuantity + 2;">
+        +2
+
+    </button>
+    <button onclick="
+    document.getElementById('cart-quantity').innerText = cartQuantity= cartQuantity + 3;">
+        +3
+
+    </button>
+
+    <button onclick="
+    document.getElementById('cart-quantity').innerText = cartQuantity = 0;">
+        Reset
+
+    </button>
+
+
+    <script>
+        let cartQuantity = 0;
+    </script>
+
+</body>
+
+</html>
