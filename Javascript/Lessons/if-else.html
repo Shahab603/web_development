@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else</title>
+</head>
+
+<body>
+
+    <h1 id="rps">Rock, Paper, Scissors</h1>
+    <button onclick=" 
+
+    let computerMove = '';
+
+    if(randomNumber>=0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=1/3 && randomNumber < 2/3){
+        computerMove = 'pepper';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=2/3 && randomNumber < 1){
+        computerMove = 'Scissors';
+        document.getElementById('rps').innerText = computerMove;
+    }
+
+    let result ='';
+
+
+    if(computerMove==='Rock'){
+        result = 'tie';
+        document.getElementById('rpsr').innerHTML = result
+    }else if (computerMove==='pepper'){
+        result ='You Loose';
+        document.getElementById('rpsr').innerHTML = result
+
+    } else if (computerMove==='Scissors'){
+        result = 'You Win';
+        document.getElementById('rpsr').innerHTML = result
+    }
+    ">
+        Rock
+    </button>
+
+
+    <button onclick="
+
+
+    if(randomNumber>=0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=1/3 && randomNumber < 2/3){
+        computerMove = 'pepper';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=2/3 && randomNumber < 1){
+        computerMove = 'Scissors';
+        document.getElementById('rps').innerText = computerMove;
+    }
+    if(computerMove==='Rock'){
+        result = 'You Win';
+        document.getElementById('rpsr').innerHTML = result
+    }else if (computerMove==='pepper'){
+        result ='Tie';
+        document.getElementById('rpsr').innerHTML = result
+
+    } else if (computerMove==='Scissors'){
+        result = 'Loose';
+        document.getElementById('rpsr').innerHTML = result
+    }
+        ">
+        Pepper
+    </button>
+    <button onclick="
+
+    if(randomNumber>=0 && randomNumber < 1/3){
+        computerMove = 'Rock';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=1/3 && randomNumber < 2/3){
+        computerMove = 'pepper';
+        document.getElementById('rps').innerText = computerMove;
+    }else if (randomNumber>=2/3 && randomNumber < 1){
+        computerMove = 'Scissors';
+        document.getElementById('rps').innerText = computerMove;
+    }
+    if(computerMove==='Rock'){
+        result = 'You Loose';
+        document.getElementById('rpsr').innerHTML = result
+    }else if (computerMove==='pepper'){
+        result ='You Win';
+        document.getElementById('rpsr').innerHTML = result
+
+    } else if (computerMove==='Scissors'){
+        result = 'Tie';
+        document.getElementById('rpsr').innerHTML = result
+    }
+    
+    
+    ">
+        Siccors
+    </button>
+
+    <h1 id="rpsr">Result</h1>
+
+    <script>
+        let randomNumber = Math.random();
+
+
+
+    </script>
+
+</body>
+
+</html>
