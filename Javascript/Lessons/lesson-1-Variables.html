@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript_Lesson_1_Variables</title>
 </head>
+
 <body>
+    <h1>Javascript Variables</h1>
+
+    <!-- summation block  -->
+    <h2>Summation Example</h2>
+    <p id="demo"></p>
+    <h2 id="_result"></h2>
+
+    <!-- summation block  Ends here -->
+
+
+    <!-- One Line Statement starts here  -->
+    <h2>One statement, Many Variables</h2>
+    <h3 id="fName"></h3>
+    <!-- One Line Statement starts here  -->
+
+
 
     <script>
+        // summation block 
         let variable1 = 3;
         let variable2 = 4;
         let result = variable1 + variable2;
-        console.log(result);
+        {
+            document.getElementById('demo').innerHTML = 'The result of summation is:';
+            document.getElementById('_result').innerHTML = result;
+        }
+        // summation block ends here
+
+
+        let fName = 'John'; lName = 'Doe'; carName = 'Volvo';
+
+        {
+            document.getElementById('fName').innerHTML = fName + ' ' + lName + ' ' + 'has' + ' ' + carName + ' Car';
+
+        }
+
     </script>
-    
+
 </body>
+
 </html>
