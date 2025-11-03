@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opertors</title>
+  </head>
+  <body>
+    <h1>Operators</h1>
+
+    <h2> A = 5</h2>
+    <h2> B = 7</h2>
+
+    <h3>Addition (a + b)</h3>
+    <h4 id="add"></h4>
+    <h3>Subtraction (a - b)</h3>
+    <h4 id="sub"></h4>
+    <h3>Multiplication (a * b)</h3>
+    <h4 id="mul"></h4>
+    <h3>Division (a / b)</h3>
+    <h4 id="div"></h4>
+
+    <script>
+      let a = 5;
+      let b = 7;
+      let sum = a + b;
+      let sub = b - a;
+      let mul = a * b;
+      let div = b/a;
+
+      document.getElementById("add").innerHTML = sum;
+      document.getElementById("sub").innerHTML = sub;
+      document.getElementById("mul").innerHTML = mul;
+      document.getElementById("div").innerHTML = div;
+    </script>
+  </body>
+</html>
