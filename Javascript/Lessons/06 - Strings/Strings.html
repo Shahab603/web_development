@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Strings</h1>
+
+    <h3>Quote Text</h3>
+    <p id="demo"></p>
+    <h3>Back Tick Text</h3>
+    <p id="demo2"></p>
+    <h3>Text Length</h3>
+    <p id="demo3"></p>
+    <h3>Escape Characters</h3>
+    <p id="demo4"></p>
+
+    <script>
+      let qutoteText =
+        'Albert Pike said: "What we do for us, dies with us; what we do for others remains immortal."';
+      let backTick = `It takes both 'Single quotes' & "Double Quotes"`;
+        let text = "John Doe"; // String written inside quotes
+        let len = qutoteText.length;
+        let escapeChar = "No one can make you feel inferior without your consent \"Eleanor Roosevelt \" ";
+      document.getElementById("demo").innerHTML = qutoteText;
+      document.getElementById("demo2").innerHTML = backTick;
+      document.getElementById("demo3").innerHTML = 'The length:' + len;
+      document.getElementById("demo4").innerHTML = escapeChar;
+    </script>
+  </body>
+</html>
